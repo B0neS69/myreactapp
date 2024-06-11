@@ -13,6 +13,8 @@ import inImage from './img/in.png';
 import clImage from './img/cl.png';
 import diagImage from './img/diag.png';
 import upgradeImage from './img/upgrade.png';
+import componentsImage from './img/compon.png';
+
 function App() {
   const [selectedServices, setSelectedServices] = useState([]);
   const services = [
