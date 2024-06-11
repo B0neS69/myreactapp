@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import pcreg from './img/pcrep.jpg'; 
-import pcpg from './img/pcpg.png';
-import pcnew from './img/pcnew.png';
+import pcreg from '../../img/pcrep.jpg'; 
+import pcpg from '../../img/pcpg.png';
+import pcnew from '../../img/pcnew.png';
 import './Home.css';
 
 const Home = () => {

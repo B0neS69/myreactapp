@@ -39,50 +39,20 @@
   }
 }
 
-
+.card {
+height: 100%;
+}
 .card .card-img-top{
   overflow: hidden; 
-    width:  95%; 
-    height: 170px; 
+    width:  80%; 
+    height: 100%; 
     object-fit: scale-down;
     object-position: center;
     margin: 5px;
 }
 
 /* Оформлення карток для однакового розміру */
-.service-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  
-}
 
-.service-card .card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.service-card .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-}
-
-.service-card .card-text {
-  flex-grow: 1;
-}
-
-.service-card .card-price {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.service-card button {
-  margin-top: 10px;
-  width: 100%; /* Забезпечує однаковий розмір кнопок */
-}
 
 
 
@@ -146,7 +116,7 @@
 .carousel-indicators {
   color: #000;
   margin-bottom: 0;
-  
+  bottom: -40px !important;
 }
 
 .carousel-indicators button {
