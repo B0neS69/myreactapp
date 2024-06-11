@@ -13,34 +13,37 @@ const CartPage = ({ selectedServices, removeFromCart, clearCart }) => {
       {selectedServices.length > 0 ? (
         <Row className="cart-row">
           {selectedServices.map((service, index) => (
-            <Col key={index} md={12} className="cart-col">
+            <Col key={index} md={12} className="cart-item">
               <Card className="cart-card">
-                <Card.Body className="cart-card-body">
-                  <div className="cart-card-title">{service.title}</div>
-                  <div className="cart-card-text">{service.price} грн</div>
+                <Card.Body className="d-flex justify-content-between align-items-center">
+                  <div>{service.title}</div>
+                  <div className="cart-price">{service.price} грн</div>
                 </Card.Body>
               </Card>
             </Col>
           ))}
-          <Col md={12} className="cart-total-col">
-            <Card className="cart-total-card">
-              <Card.Body className="cart-total-card-body">
-                <div className="cart-total-row">
-                  <Card.Title className="cart-total-title">Загальна вартість:</Card.Title>
-                  <Card.Text className="cart-total-text">{calculateTotalPrice()} грн</Card.Text>
-                </div>
-                <div className="cart-buttons">
-                  <Button variant="success" className="cart-order-button">Замовити</Button>
-                  <Button variant="danger" className="cart-clear-button" onClick={clearCart}>
-                    Видалити замовлення
-                  </Button>
-                </div>
-              </Card.Body>
-            </Card>
+          <Col md={12} className="cart-total">
+          <div className="cart-total-price">
+            <div>
+              <div className="d-flex justify-content-between align-items-center mb-3">
+                <h4>Загальна вартість:</h4>
+                <div className="cart-price">{calculateTotalPrice()} грн</div>
+              </div>
+            </div>
+            <div>
+              
+            </div>
+            <div className="d-flex justify-content-end">
+              <Button variant="success" className="cart-button">Замовити</Button>
+            </div>
+            <div className="d-flex justify-content-end">
+              <Button variant="danger"className="cart-button" onClick={clearCart}>Видалити замовлення</Button>
+            </div>
+          </div>
           </Col>
         </Row>
       ) : (
-        <p className="cart-empty-text">Ваша корзина порожня.</p>
+        <p className="cart-empty">Ваша корзина порожня.</p>
       )}
     </Container>
   );

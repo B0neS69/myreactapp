@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
- 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,8 +24,6 @@
   }
 }
 
-
-
 .App-link {
   color: #61dafb;
 }
@@ -39,19 +37,39 @@
   }
 }
 
-.card {
-height: 100%;
-}
-.card .card-img-top{
-  overflow: hidden; 
-    width:  80%; 
-    height: 100%; 
-    object-fit: scale-down;
-    object-position: center;
-    margin: 5px;
-}
+
+
 
 /* Оформлення карток для однакового розміру */
+.mt-4 {
+  margin-bottom: 30px;
+}
+
+.card {
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+  
+.card:hover {
+  transform: scale(1.07); 
+}
+
+.serviceCard {
+  transition: transform 0.3s ease; 
+}
+
+.serviceCard:hover {
+  transform: scale(1.05); 
+}
+
+.card .card-img-top{
+    overflow: hidden; 
+      width:  80%; 
+      height: 100%; 
+      object-fit: scale-down;
+      object-position: center;
+      margin: 5px;
+  }
 
 
 

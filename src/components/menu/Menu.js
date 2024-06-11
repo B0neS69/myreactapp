@@ -14,7 +14,7 @@ const Menu = ({ cartCount }) => {
             <Nav.Link href="#services" className="fs-5 mx-2">Послуги</Nav.Link> 
             <Nav.Link as={Link} to="/cart" className="fs-5 mx-2">Корзина ({cartCount})</Nav.Link> 
           </Nav>
-          <Navbar.Text className="fs-6 mx-5">
+          <Navbar.Text className="fs-5 mx-5">
             Увійшли як: <a>Гаврилюк Андрій</a>
           </Navbar.Text>
         </Navbar.Collapse>

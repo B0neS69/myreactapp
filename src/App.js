@@ -11,7 +11,8 @@ import virImage from './img/vir.jpg';
 import repImage from './img/rep.avif';
 import inImage from './img/in.png';
 import clImage from './img/cl.png';
-
+import diagImage from './img/diag.png';
+import upgradeImage from './img/upgrade.png';
 function App() {
   const [selectedServices, setSelectedServices] = useState([]);
   const services = [
@@ -43,27 +44,27 @@ function App() {
       price: 100,
       image: clImage,
     },
-    // {
-    //   id: 5,
-    //   title: 'Діагностика проблем',
-    //   description: 'Повна діагностика системи для визначення та виправлення несправностей.',
-    //   price: 200,
-    //   image: diagImage, // Замініть на відповідне зображення
-    // },
-    // {
-    //   id: 6,
-    //   title: 'Модернізація комп\'ютера',
-    //   description: 'Оновлення апаратного забезпечення для підвищення продуктивності вашого ПК.',
-    //   price: 350,
-    //   image: upgradeImage, // Замініть на відповідне зображення
-    // },
-    // {
-    //   id: 7,
-    //   title: 'Підбір та налаштування комплектуючих',
-    //   description: 'Допомога у виборі та налаштуванні нових комплектуючих для вашого ПК.',
-    //   price: 200,
-    //   image: componentsImage, // Замініть на відповідне зображення
-    // },
+    {
+      id: 5,
+      title: 'Діагностика проблем',
+      description: 'Повна діагностика системи для визначення та виправлення несправностей.',
+      price: 200,
+      image: diagImage, 
+    },
+    {
+      id: 6,
+      title: 'Модернізація комп\'ютера',
+      description: 'Оновлення комплектуючих для підвищення продуктивності вашого ПК.',
+      price: 350,
+      image: upgradeImage, 
+    },
+    {
+      id: 7,
+      title: 'Підбір та налаштування комплектуючих',
+      description: 'Допомога у виборі та налаштуванні нових комплектуючих для вашого ПК.',
+      price: 200,
+      image: componentsImage, 
+    },
   ];
 
   return (
