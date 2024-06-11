@@ -1,0 +1,22 @@
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .card-text.price {
+    color: #007bff;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }

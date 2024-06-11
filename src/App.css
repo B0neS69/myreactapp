@@ -1,6 +1,17 @@
 .App {
   text-align: center;
 }
+ 
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
 .App-logo {
   height: 40vmin;
@@ -13,16 +24,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +37,119 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.card .card-img-top{
+  overflow: hidden; 
+    width:  95%; 
+    height: 170px; 
+    object-fit: scale-down;
+    object-position: center;
+    margin: 5px;
+}
+
+/* Оформлення карток для однакового розміру */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  
+}
+
+.service-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.service-card .card-text {
+  flex-grow: 1;
+}
+
+.service-card .card-price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-card button {
+  margin-top: 10px;
+  width: 100%; /* Забезпечує однаковий розмір кнопок */
+}
+
+
+
+
+/*Оформлення каруселі*/
+.carousel {
+  
+  height: 80vh; /* 75% висоти відносно видимого вікна */
+  width: 80vh; /* 50% ширини сторінки */
+  margin: auto; /* центруємо карусель на сторінці */
+  color: #000;
+}
+
+.carousel-item {
+  width:  100% !important; 
+  height: 75% !important;
+  color: #000;
+}
+
+.carousel-item img {
+  overflow: hidden; 
+  object-fit: scale-down;
+  object-position: center; 
+
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+    color: #000;
+    margin: -75px;
+    height: 500px;
+    margin-top: 150px;
+}
+
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.788);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ border-radius: 30px;
+}
+
+.carousel-caption h5{
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  color:black;
+}
+
+.carousel-caption p{
+  width: 100%;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.9;
+  color:black;
+}
+
+.carousel-indicators {
+  color: #000;
+  margin-bottom: 0;
+  
+}
+
+.carousel-indicators button {
+  background-color: #3d3d3d !important;
+
 }
