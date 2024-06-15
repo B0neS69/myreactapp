@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import './Service.css';
+import '../../assets/style/Service.css';
 const ServicesPage = ({ services, selectedServices, setSelectedServices }) => {
   const addToCart = (service) => {
     if (!selectedServices.some((selectedService) => selectedService.title === service.title)) {

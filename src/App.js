@@ -7,13 +7,15 @@ import CartPage from './components/cart/CartPage';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
-import virImage from './img/vir.jpg';
-import repImage from './img/rep.avif';
-import inImage from './img/in.png';
-import clImage from './img/cl.png';
-import diagImage from './img/diag.png';
-import upgradeImage from './img/upgrade.png';
-import componentsImage from './img/compon.png';
+
+
+import virImage from './assets/img/vir.jpg';
+import repImage from './assets/img/rep.avif';
+import inImage from './assets/img/in.png';
+import clImage from './assets/img/cl.png';
+import diagImage from './assets/img/diag.png';
+import upgradeImage from './assets/img/upgrade.png';
+import componentsImage from './assets/img/compon.png';
 
 function App() {
   const [selectedServices, setSelectedServices] = useState([]);

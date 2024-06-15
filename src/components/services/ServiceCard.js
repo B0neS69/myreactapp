@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import './Service.css';
+import '../../assets/style/Service.css';
 const ServiceCard = ({ title, description, price, addToCart, removeFromCart, isAddedToCart, image }) => {
   return (
     <Card className='serviceCard'>
