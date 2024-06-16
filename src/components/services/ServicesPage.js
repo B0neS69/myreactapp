@@ -2,8 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../../assets/style/Service.css';
 const ServicesPage = ({ services, selectedServices, setSelectedServices }) => {
-  
+
   const addToCart = (service) => {
+    //перевіряємо чи є вибрана послуга в списку SelectedServi
     if (!selectedServices.some((selectedService) => selectedService.title === service.title)) {
       setSelectedServices((prevSelectedServices) => [...prevSelectedServices, service]);
     }
