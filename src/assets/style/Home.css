@@ -1,33 +1,24 @@
-/*Оформлення каруселі*/
-.carousel {
-  
-    height: 80vh; /* 75% висоти відносно видимого вікна */
-    width: 80vh; /* 50% ширини сторінки */
-    margin: auto; /* центруємо карусель на сторінці */
-
+ .carousel {
+    height: 80vh;
+    width: 80vh;
+    margin: auto;
   }
-  
   .carousel-item {
     height: 75% !important;
   }
-  
   .carousel-item img {
     overflow: hidden; 
     object-fit: scale-down;
     object-position: center; 
-  
   }
-  
   .carousel-control-next,
-  .carousel-control-prev /*, .carousel-indicators */ {
+  .carousel-control-prev {
       filter: invert(100%);
       color: #000;
       margin: -75px;
       height: 500px;
       margin-top: 150px;
   }
-  
-  
   .carousel-caption {
     background-color: rgba(255, 255, 255, 0.788);
    display: flex;
@@ -35,7 +26,6 @@
    justify-content: center;
    border-radius: 30px;
   }
-  
   .carousel-caption h5{
     font-size: 28px;
     text-transform: uppercase;
@@ -43,7 +33,6 @@
     margin-top: 25px;
     color:black;
   }
-  
   .carousel-caption p{
     width: 100%;
     margin: auto;
@@ -51,13 +40,10 @@
     line-height: 1.9;
     color:black;
   }
-  
   .carousel-indicators {
     color: #000;
     bottom: -40px !important;
   }
-  
   .carousel-indicators button {
     background-color: #3d3d3d !important;
-  
   }

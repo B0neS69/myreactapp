@@ -1,9 +1,6 @@
-/* Contact.css */
-
 .contact-page {
     padding-top: 100px; 
 }
-
 .contact-container {
     max-width: 100%; 
     margin: 0 auto;
@@ -14,25 +11,25 @@
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-  
+}  
 .contact-container h2 {
     text-align: center;
     color: #333;
     width: 100%;
     margin-bottom: 20px;
-}
-  
+} 
 .contact-container p {
     font-size: 1.1rem;
     color: #555;
     margin-bottom: 10px;
     flex-basis: 100%; 
 }
-
 .contact-detail {
     font-weight: bold;
     color: #000;
     flex-basis: 50%; 
     padding: 5px; 
 }
+
+
+
