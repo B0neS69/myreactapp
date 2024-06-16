@@ -7,8 +7,6 @@ import CartPage from './components/cart/CartPage';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
-
-
 import virImage from './assets/img/vir.jpg';
 import repImage from './assets/img/rep.avif';
 import inImage from './assets/img/in.png';
@@ -70,7 +68,6 @@ function App() {
       image: componentsImage, 
     },
   ];
-
   return (
     <Router>
       <section className="app">
@@ -80,10 +77,10 @@ function App() {
         <Routes>
           <Route index element={<Navigate to="/home" />} /> 
           <Route path="/home" element={<Home />} />
-          <Route path="/services" element={<ServicesPage services={services} selectedServices={selectedServices} setSelectedServices={setSelectedServices} />} />
+          <Route path="/services" element={<ServicesPage services={services} selectedServices={selectedServices} 
+          setSelectedServices={setSelectedServices} />} />
           <Route path="/cart" element={<CartPage selectedServices={selectedServices} />} />
           <Route path="/about" element={<About />} />
-          
         </Routes>
         <footer className="app-footer">
           <Contact />
@@ -92,5 +89,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;

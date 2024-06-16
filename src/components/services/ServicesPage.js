@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../../assets/style/Service.css';
 const ServicesPage = ({ services, selectedServices, setSelectedServices }) => {
+  
   const addToCart = (service) => {
     if (!selectedServices.some((selectedService) => selectedService.title === service.title)) {
       setSelectedServices((prevSelectedServices) => [...prevSelectedServices, service]);
@@ -27,10 +28,13 @@ const ServicesPage = ({ services, selectedServices, setSelectedServices }) => {
                 <p className="card-text">{service.description}</p>
                 <p className="card-price">Ціна: {service.price} ₴</p>
                 <button
-                  className={`btn btn-${selectedServices.some((selectedService) => selectedService.title === service.title) ? 'danger' : 'primary'}`}
-                  onClick={() => selectedServices.some((selectedService) => selectedService.title === service.title) ? removeFromCart(service) : addToCart(service)}
+                  className={`btn btn-${selectedServices.some((selectedService) => 
+                    selectedService.title === service.title) ? 'danger' : 'primary'}`}
+                  onClick={() => selectedServices.some((selectedService) => 
+                    selectedService.title === service.title) ? removeFromCart(service) : addToCart(service)}
                 >
-                  {selectedServices.some((selectedService) => selectedService.title === service.title) ? 'Remove from Cart' : 'Add to Cart'}
+                  {selectedServices.some((selectedService) => 
+                    selectedService.title === service.title) ? 'Видалити з корзини' : 'Додати до корзини'}
                 </button>
               </div>
             </div>

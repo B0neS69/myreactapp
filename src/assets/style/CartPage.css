@@ -4,45 +4,36 @@
   padding: 20px 0;
   text-align: center;
 }
-
 .cart-container h2 {
   margin-bottom: 20px;
   font-size: 28px;
 }
-
 .cart-row {
   margin-bottom: 20px;
 }
-
 .cart-item {
   margin-bottom: 20px;
 }
-
 .cart-card {
   padding: 10px;
   font-size: 20px;
 }
-
 .cart-price {
   font-weight: bold;
   font-size: 18px;
 }
-
 .cart-total {
   margin-top: 20px;
 }
-
 .cart-total-price {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
 }
-
 .cart-empty {
   font-size: 22px;
   color: #999;
 }
-
 .cart-button {
   margin: 5px;
   width: 200px;

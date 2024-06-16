@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import '../../assets/style/CartPage.css';
 
-const CartPage = ({ selectedServices, removeFromCart, clearCart }) => {
+const CartPage = ({ selectedServices, clearCart }) => {
   const calculateTotalPrice = () => {
     return selectedServices.reduce((total, service) => total + service.price, 0);
   };
@@ -37,7 +37,9 @@ const CartPage = ({ selectedServices, removeFromCart, clearCart }) => {
               <Button variant="success" className="cart-button">Замовити</Button>
             </div>
             <div className="d-flex justify-content-end">
-              <Button variant="danger"className="cart-button" onClick={clearCart}>Видалити замовлення</Button>
+              <Button variant="danger"className="cart-button" onClick={clearCart}>
+                Видалити замовлення
+                </Button>
             </div>
           </div>
           </Col>

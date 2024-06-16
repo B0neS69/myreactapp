@@ -9,8 +9,7 @@ const Home = () => {
   return (
     <Carousel>
       <Carousel.Item>
-        <img 
-          className="d-block w-100"
+        <img className="d-block w-100"
           src={pcreg}          
           alt="First slide"
         />
@@ -20,8 +19,7 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
+        <img className="d-block w-100"
           src={pcpg}          
           alt="Second slide"
         />
@@ -31,8 +29,7 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
+        <img className="d-block w-100"
           src={pcnew}          
           alt="Third slide"
         />
@@ -41,7 +38,6 @@ const Home = () => {
           <p>Допоможимо вам підібрати ПК під ваші вимоги</p>
         </Carousel.Caption>
       </Carousel.Item>
-
     </Carousel>
   );
 };
